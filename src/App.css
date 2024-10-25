@@ -1,0 +1,4 @@
+/* Prevent scrolling */
+.no-scroll {
+  overflow: hidden;
+}
