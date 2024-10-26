@@ -24,8 +24,8 @@ function Navbar() {
                             <ul className='flex gap-6 uppercase text-sm font-medium items-center'>
                                 <Link to={'/home'} className='cursor-pointer py-1 tracking-wide'>Home</Link>
                                 <Link to={'/doctors'} className='cursor-pointer py-1 tracking-wide'>All Doctors</Link>
-                                <Link className='cursor-pointer py-1 tracking-wide'>About</Link>
-                                <Link  className='cursor-pointer py-1 tracking-wide'>Contact</Link>
+                                <Link to={'/'} className='cursor-pointer py-1 tracking-wide'>About</Link>
+                                <Link to={'/'} className='cursor-pointer py-1 tracking-wide'>Contact</Link>
                                 <Link to={'/adminpanel'} target='_blank' className='text-xs border rounded-full text-center capitalize py-1 px-5 border-gray-300'>Admin Panel</Link>
                             </ul>
                         </div>
@@ -45,10 +45,10 @@ function Navbar() {
                     {/* Mobile Menu */}
                     <div className={`md:hidden ${isMenuOpen ? 'block' : 'hidden'}`}>
                         <ul className='flex flex-col gap-4 uppercase text-sm font-medium items-center'>
-                            <a className='cursor-pointer py-1 tracking-wide'>Home</a>
-                            <a className='cursor-pointer py-1 tracking-wide'>All Doctors</a>
-                            <a className='cursor-pointer py-1 tracking-wide'>About</a>
-                            <a className='cursor-pointer py-1 tracking-wide'>Contact</a>
+                            <Link to={'/home'} className='cursor-pointer py-1 tracking-wide'>Home</Link>
+                            <Link to={'/doctors'} className='cursor-pointer py-1 tracking-wide'>All Doctors</Link>
+                            <Link to={'/about'} className='cursor-pointer py-1 tracking-wide'>About</Link>
+                            <Link to={'/contact'} className='cursor-pointer py-1 tracking-wide'>Contact</Link>
                         </ul>
                     </div>
 
