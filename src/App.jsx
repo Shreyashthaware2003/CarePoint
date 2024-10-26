@@ -11,12 +11,16 @@ import Neurologist from './page/Neurologist';
 import Gastroenterologist from './page/Gastroenterologist';
 import Account from './pages/Account';
 import AdminPanel from './pages/AdminPanel';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import ScrollToTop from './components/ScrollToTop'; // import the ScrollToTop component
 
 function App() {
 
   return (
     <>
       <BrowserRouter>
+        <ScrollToTop /> {/* Include ScrollToTop here */}
         <Routes>
           <Route index element={<Home />} />
           <Route path="/home" element={<Home />} />
@@ -29,6 +33,8 @@ function App() {
           <Route path="/gastroenterologist" element={<Gastroenterologist />} />
           <Route path="/account" element={<Account />} />
           <Route path="/adminpanel" element={<AdminPanel />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
 
 
         </Routes>
